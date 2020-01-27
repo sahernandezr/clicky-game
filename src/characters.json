@@ -19,8 +19,8 @@
   },
   {
     "id": 4,
-    "name": "Chttps://github.com/sahernandezr/clicky-game/blob/master/public/images/castle.png?raw=trueastle",
-    "image": "",
+    "name": "Castle",
+    "image": "https://github.com/sahernandezr/clicky-game/blob/master/public/images/castle.png?raw=trueastle",
     "clicked": false
   },
   {
@@ -38,7 +38,7 @@
   {
     "id": 7,
     "name": "Ghost",
-    "image": "https://github.com/sahernandezr/clicky-game/blob/master/public/images/qhost.png?raw=true",
+    "image": "https://github.com/sahernandezr/clicky-game/blob/master/public/images/ghost.png?raw=true",
     "clicked": false
   },
   {

@@ -1,25 +1,23 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Nav from "./components/Nav";
+import Header from "./components/Header";
+import Wrapper from "./components/Wrapper";
+import Character from "./components/Character";
+import characters from "./characters.json";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <img src="https://github.com/sahernandezr/clicky-game/blob/master/public/images/bullet.png?raw=true"/>
-      </header>
+    <div className="wholeSite">
+    <Nav/>
+    <Header>Clicky Game!</Header>
+    <Wrapper>
+    {
+  characters.map((character, i) => 
+  <Character name={character.name} image={character.image}/>
+  )}
+    </Wrapper>
     </div>
   );
 }
