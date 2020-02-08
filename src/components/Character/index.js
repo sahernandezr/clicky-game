@@ -3,8 +3,14 @@ import "./style.css";
 
 
 function Character(props) {
-  return (
-    <div className="card" onClick={() => props.clickedCharacter(props.id)} >
+  // function sayHello () {
+  //   alert("hello");
+  // }
+
+    return (
+    <div onClick={() => props.setClicked(props.id) 
+    //console.log(props.id)
+    } className="card">
       <div className="img-container" >
         <img
           alt={props.name}
@@ -14,25 +20,5 @@ function Character(props) {
     </div>
   );
 }
-
-// class Character extends Component {
-//   state = {
-//     score: 0
-//   };
-
-//   render(props) {
-//     return (
-//     <div className="card">
-//       <div className="img-container">
-//         <img
-//           alt={props.name}
-//           src={props.image}
-//         />
-//       </div>
-//     </div>
-//     );
-//   }
-// }
-
 
 export default Character;
